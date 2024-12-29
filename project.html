@@ -97,7 +97,6 @@
                         <a href="quote.html" class="dropdown-item">Free Quote</a>
                         <a href="team.html" class="dropdown-item">Our Team</a>
                         <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
                     </div>
                 </div>
                 <a href="contact.html" class="nav-item nav-link">Contact</a>
@@ -135,14 +134,14 @@
                 <div class="col-12 text-center">
                     <ul class="list-inline mb-5" id="portfolio-flters">
                         <li class="mx-2 active" data-filter="*">All</li>
-                        <li class="mx-2" data-filter=".first">Kabeza</li>
-                        <li class="mx-2" data-filter=".second">Kimironko</li>
-                        <li class="mx-2" data-filter=".third">Gisementi</li>
+                        <li class="mx-2" data-filter=".first">Short-Term</li>
+                        <li class="mx-2" data-filter=".second">Medium-Term</li>
+                        <li class="mx-2" data-filter=".third">Long-Term</li>
                     </ul>
                 </div>
             </div>
             <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.5s">
-                <div class="col-lg-4 col-md-6 portfolio-item first">
+                <div class="col-lg-4 col-md-6 portfolio-item third">
                     <div class="portfolio-img rounded overflow-hidden">
                         <img class="img-fluid" src="img/img-600x400-5.jpg" alt="">
                         <div class="portfolio-btn">
@@ -151,23 +150,31 @@
                         </div>
                     </div>
                     <div class="pt-3">
-                        <p class="text-primary mb-0">Project at Gisusu</p>
+                        <p class="text-primary mb-0">Project Jasper</p>
                         <hr class="text-primary w-25 my-2">
-                        <a href="" class="btn btn-primary rounded-pill py-3 px-5 mt-3">Click to Invest</a>
+                        <button class="btn btn-primary rounded-pill py-1 px-3 mt-1" data-bs-toggle="modal" data-bs-target="#paymentModal"
+                        data-project-type="Long-Term" data-start-date="2025-01-01" data-end-date="2025-01-12"
+                        data-description=""
+                        data-location="Kimironko, Kigali Rwanda", data-image="img/img-600x400-5.jpg">
+                            Invest</button>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item second">
                     <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/img-600x400-5.jpg" alt="">
+                        <img class="img-fluid" src="img/solar-2.jpeg" alt="">
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/solar-2.jpeg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                             <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
                         </div>
                     </div>
                     <div class="pt-3">
-                        <p class="text-primary mb-0">Project at Kimironko</p>
+                        <p class="text-primary mb-0">Project Sardus</p>
                         <hr class="text-primary w-25 my-2">
-                        <a href="" class="btn btn-primary rounded-pill py-3 px-5 mt-3">Click to Invest</a>
+                        <button class="btn btn-primary rounded-pill py-1 px-3 mt-1" data-bs-toggle="modal" data-bs-target="#paymentModal"
+                        data-project-type="Medium-Term" data-start-date="2025-01-01" data-end-date="2025-01-12"
+                        data-description=""
+                        data-location="Kabeza, Kigali Rwanda", data-image="img/solar-2.jpeg">
+                        Invest</button>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item third">
@@ -179,9 +186,13 @@
                         </div>
                     </div>
                     <div class="pt-3">
-                        <p class="text-primary mb-0">Project at Kabuga</p>
+                        <p class="text-primary mb-0">Project Amethyst</p>
                         <hr class="text-primary w-25 my-2">
-                        <a href="" class="btn btn-primary rounded-pill py-3 px-5 mt-3">Click to Invest</a>
+                        <button class="btn btn-primary rounded-pill py-1 px-3 mt-1" data-bs-toggle="modal" data-bs-target="#paymentModal"
+                        data-project-type="Long-Term" data-start-date="2025-01-01" data-end-date="2025-01-12"
+                        data-description=""
+                        data-location="Kibagabaga, Kigali Rwanda", data-image="img/img-600x400-4.jpg">
+                        Invest</button>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item first">
@@ -193,26 +204,34 @@
                         </div>
                     </div>
                     <div class="pt-3">
-                        <p class="text-primary mb-0">Project at Gisozi</p>
+                        <p class="text-primary mb-0">Project Selen</p>
                         <hr class="text-primary w-25 my-2">
-                        <a href="" class="btn btn-primary rounded-pill py-3 px-5 mt-3">Click to Invest</a>
+                        <button class="btn btn-primary rounded-pill py-1 px-3 mt-1" data-bs-toggle="modal" data-bs-target="#paymentModal"
+                        data-project-type="Short-Term" data-start-date="2025-01-01" data-end-date="2025-01-12"
+                        data-description=""
+                        data-location="Masoro, Kigali Rwanda", data-image="img/img-600x400-3.jpg">
+                        Invest</button>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second">
+                <div class="col-lg-4 col-md-6 portfolio-item first">
                     <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/img-600x400-2.jpg" alt="">
+                        <img class="img-fluid" src="img/solar-1.jpg" alt="">
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/solar-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                             <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
                         </div>
                     </div>
                     <div class="pt-3">
-                        <p class="text-primary mb-0">Project at Kabeza</p>
+                        <p class="text-primary mb-0">Project Wallace</p>
                         <hr class="text-primary w-25 my-2">
-                        <a href="" class="btn btn-primary rounded-pill py-3 px-5 mt-3">Click to Invest</a>
+                        <button class="btn btn-primary rounded-pill py-1 px-3 mt-1" data-bs-toggle="modal" data-bs-target="#paymentModal"
+                        data-project-type="Short-Term" data-start-date="2025-01-01" data-end-date="2025-01-12"
+                        data-description=""
+                        data-location="Free Zone, Kigali Rwanda", data-image="img/solar-1.jpg">
+                        Invest</button>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 portfolio-item third">
+                <div class="col-lg-4 col-md-6 portfolio-item second">
                     <div class="portfolio-img rounded overflow-hidden">
                         <img class="img-fluid" src="img/img-600x400-1.jpg" alt="">
                         <div class="portfolio-btn">
@@ -221,9 +240,13 @@
                         </div>
                     </div>
                     <div class="pt-3">
-                        <p class="text-primary mb-0">Project at Gisementi</p>
+                        <p class="text-primary mb-0">Project Humper</p>
                         <hr class="text-primary w-25 my-2">
-                        <a href="" class="btn btn-primary rounded-pill py-3 px-5 mt-3">Click to Invest</a>
+                        <button class="btn btn-primary rounded-pill py-1 px-3 mt-1" data-bs-toggle="modal" data-bs-target="#paymentModal"
+                        data-project-type="Medium-Term" data-start-date="2025-01-01" data-end-date="2025-01-12"
+                        data-description=""
+                        data-location="Kimironko, Kigali Rwanda", data-image="img/img-600x400-1.jpg">
+                        Invest</button>
                     </div>
                 </div>
             </div>
@@ -417,6 +440,131 @@
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
+    <!-- Modal Dialog Box -->
+    <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="paymentModalLabel">Project Details & Payment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Project Details -->
+                    <img id="modal-project-image" src="default-placeholder.png" alt="Project Image" class="img-fluid mb-3 rounded">
+                    <p><strong>Project Type:</strong> <span id="modal-project-type"></span></p>
+                    <p><strong>Start Date:</strong> <span id="modal-start-date"></span></p>
+                    <p><strong>End Date:</strong> <span id="modal-end-date"></span></p>
+                    <p><strong>Location:</strong> <span id="modal-location"></span></p>
+                    <p><strong>Description:</strong> <span id="modal-description"></span></p>
+
+                    <hr>
+
+                    <!-- Payment Form -->
+                    <form id="paymentForm">
+                        <div class="mb-3">
+                            <label for="cardNumber" class="form-label">Card Number</label>
+                            <input type="text" class="form-control" id="cardNumber" maxlength="16" placeholder="Enter 16-digit card number" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cvv" class="form-label">CVV</label>
+                            <input type="text" class="form-control" id="cvv" maxlength="3" placeholder="Enter 3-digit CVV" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="expiryDate" class="form-label">Expiry Date</label>
+                            <input type="month" class="form-control" id="expiryDate" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="paymentMethod" class="form-label">Payment Method</label>
+                            <select class="form-select" id="paymentMethod" required>
+                                <option value="MasterCard">MasterCard</option>
+                                <option value="PayPal">PayPal</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Payment</button>
+                    </form>
+
+                    <!-- Receipt Section -->
+                    <div id="receipt" class="mt-4 d-none">
+                        <h6>Payment Successful</h6>
+                        <p><strong>Project:</strong> <span id="receiptProjectName"></span></p>
+                        <p><strong>Card:</strong> **** **** **** <span id="last4"></span></p>
+                        <p><strong>Payment Method:</strong> <span id="receiptMethod"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add click event listeners to buttons opening the modal
+        document.querySelectorAll('[data-bs-target="#paymentModal"]').forEach(button => {
+            button.addEventListener('click', () => {
+                // Fetch project details from the button's data attributes
+                const projectType = button.getAttribute('data-project-type');
+                const description = button.getAttribute('data-description') || "No description provided.";
+                const startDate = button.getAttribute('data-start-date');
+                const endDate = button.getAttribute('data-end-date');
+                const location = button.getAttribute('data-location');
+                const image = button.getAttribute('data-image') || 'default-placeholder.png';
+
+                // Update modal fields
+                document.getElementById('modal-project-image').src = image;
+                document.getElementById('modal-project-type').textContent = projectType;
+                document.getElementById('modal-description').textContent = description;
+                document.getElementById('modal-start-date').textContent = startDate;
+                document.getElementById('modal-end-date').textContent = endDate;
+                document.getElementById('modal-location').textContent = location;
+
+                // Clear receipt section
+                document.getElementById('receipt').classList.add('d-none');
+            });
+        });
+
+        // Handle payment form submission
+        document.getElementById('paymentForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            // Validate card number
+            const cardNumber = document.getElementById('cardNumber').value.trim();
+            if (cardNumber.length !== 16 || isNaN(cardNumber)) {
+                alert('Please enter a valid 16-digit card number.');
+                return;
+            }
+
+            // Validate CVV
+            const cvv = document.getElementById('cvv').value.trim();
+            if (cvv.length !== 3 || isNaN(cvv)) {
+                alert('Please enter a valid 3-digit CVV.');
+                return;
+            }
+
+            // Get payment details
+            const paymentMethod = document.getElementById('paymentMethod').value;
+            const projectType = document.getElementById('modal-project-type').textContent;
+
+            // Update receipt section
+            document.getElementById('last4').textContent = cardNumber.slice(-4);
+            document.getElementById('receiptMethod').textContent = paymentMethod;
+            document.getElementById('receiptProjectName').textContent = projectType;
+            document.getElementById('receipt').classList.remove('d-none');
+
+            // Reset form fields
+            document.getElementById('paymentForm').reset();
+            alert('Payment successful!');
+        });
+
+        // Clear modal content when modal is closed
+        document.getElementById('paymentModal').addEventListener('hidden.bs.modal', () => {
+            document.getElementById('modal-project-image').src = "default-placeholder.png";
+            document.getElementById('modal-project-type').textContent = "";
+            document.getElementById('modal-description').textContent = "";
+            document.getElementById('modal-start-date').textContent = "";
+            document.getElementById('modal-end-date').textContent = "";
+            document.getElementById('modal-location').textContent = "";
+            document.getElementById('receipt').classList.add('d-none');
+            document.getElementById('paymentForm').reset();
+        });
+    </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
