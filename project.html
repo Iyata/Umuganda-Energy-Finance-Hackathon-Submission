@@ -155,7 +155,7 @@
                         <button class="btn btn-primary rounded-pill py-1 px-3 mt-1" data-bs-toggle="modal" data-bs-target="#paymentModal"
                         data-project-type="Long-Term" data-start-date="2025-01-01" data-end-date="2025-01-12"
                         data-description=""
-                        data-location="Kimironko, Kigali Rwanda", data-image="img/img-600x400-5.jpg">
+                        data-location="Kimironko, Kigali Rwanda", data-image="img/img-600x400-5.jpg", data-sustainability="Energy access for 10,000 People">
                             Invest</button>
                     </div>
                 </div>
@@ -173,7 +173,7 @@
                         <button class="btn btn-primary rounded-pill py-1 px-3 mt-1" data-bs-toggle="modal" data-bs-target="#paymentModal"
                         data-project-type="Medium-Term" data-start-date="2025-01-01" data-end-date="2025-01-12"
                         data-description=""
-                        data-location="Kabeza, Kigali Rwanda", data-image="img/solar-2.jpeg">
+                        data-location="Kabeza, Kigali Rwanda", data-image="img/solar-2.jpeg", data-sustainability="Energy access for 50,000 People">
                         Invest</button>
                     </div>
                 </div>
@@ -191,7 +191,7 @@
                         <button class="btn btn-primary rounded-pill py-1 px-3 mt-1" data-bs-toggle="modal" data-bs-target="#paymentModal"
                         data-project-type="Long-Term" data-start-date="2025-01-01" data-end-date="2025-01-12"
                         data-description=""
-                        data-location="Kibagabaga, Kigali Rwanda", data-image="img/img-600x400-4.jpg">
+                        data-location="Kibagabaga, Kigali Rwanda", data-image="img/img-600x400-4.jpg", data-sustainability="Energy access for 20,000 People">
                         Invest</button>
                     </div>
                 </div>
@@ -209,7 +209,7 @@
                         <button class="btn btn-primary rounded-pill py-1 px-3 mt-1" data-bs-toggle="modal" data-bs-target="#paymentModal"
                         data-project-type="Short-Term" data-start-date="2025-01-01" data-end-date="2025-01-12"
                         data-description=""
-                        data-location="Masoro, Kigali Rwanda", data-image="img/img-600x400-3.jpg">
+                        data-location="Masoro, Kigali Rwanda", data-image="img/img-600x400-3.jpg", data-sustainability="Energy access for 25,000 People">
                         Invest</button>
                     </div>
                 </div>
@@ -227,7 +227,7 @@
                         <button class="btn btn-primary rounded-pill py-1 px-3 mt-1" data-bs-toggle="modal" data-bs-target="#paymentModal"
                         data-project-type="Short-Term" data-start-date="2025-01-01" data-end-date="2025-01-12"
                         data-description=""
-                        data-location="Free Zone, Kigali Rwanda", data-image="img/solar-1.jpg">
+                        data-location="Free Zone, Kigali Rwanda", data-image="img/solar-1.jpg", data-sustainability="Energy access for 15,000 People">
                         Invest</button>
                     </div>
                 </div>
@@ -245,7 +245,7 @@
                         <button class="btn btn-primary rounded-pill py-1 px-3 mt-1" data-bs-toggle="modal" data-bs-target="#paymentModal"
                         data-project-type="Medium-Term" data-start-date="2025-01-01" data-end-date="2025-01-12"
                         data-description=""
-                        data-location="Kimironko, Kigali Rwanda", data-image="img/img-600x400-1.jpg">
+                        data-location="Kimironko, Kigali Rwanda", data-image="img/img-600x400-1.jpg", data-sustainability="Energy access for 5,000 People">
                         Invest</button>
                     </div>
                 </div>
@@ -456,6 +456,7 @@
                     <p><strong>End Date:</strong> <span id="modal-end-date"></span></p>
                     <p><strong>Location:</strong> <span id="modal-location"></span></p>
                     <p><strong>Description:</strong> <span id="modal-description"></span></p>
+                    <p><strong>Sustainability Profile:</strong> <span id="modal-sustainability"></span></p>
 
                     <hr>
 
@@ -472,6 +473,10 @@
                         <div class="mb-3">
                             <label for="expiryDate" class="form-label">Expiry Date</label>
                             <input type="month" class="form-control" id="expiryDate" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="amount" class="form-label">Investment Amount</label>
+                            <input type="text" class="form-control" id="amount" maxlength="10" placeholder="Enter Investment Amount" required>
                         </div>
                         <div class="mb-3">
                             <label for="paymentMethod" class="form-label">Payment Method</label>
@@ -506,6 +511,7 @@
                 const endDate = button.getAttribute('data-end-date');
                 const location = button.getAttribute('data-location');
                 const image = button.getAttribute('data-image') || 'default-placeholder.png';
+                const sustain = button.getAttribute('data-sustainability') || "No information provided.";
 
                 // Update modal fields
                 document.getElementById('modal-project-image').src = image;
@@ -514,6 +520,7 @@
                 document.getElementById('modal-start-date').textContent = startDate;
                 document.getElementById('modal-end-date').textContent = endDate;
                 document.getElementById('modal-location').textContent = location;
+                document.getElementById('modal-sustainability').textContent = sustain;
 
                 // Clear receipt section
                 document.getElementById('receipt').classList.add('d-none');
