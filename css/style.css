@@ -538,8 +538,8 @@
 .partner-item {
     flex: 0 0 auto;
     scroll-snap-align: center; 
-    width: 150px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
