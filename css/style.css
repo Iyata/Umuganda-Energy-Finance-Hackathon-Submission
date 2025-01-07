@@ -648,3 +648,67 @@
 .footer .copyright a:hover {
     color: var(--primary);
 }
+
+/*** Bio Modal ***/
+.bio-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.bio-modal.show {
+    display: flex;
+}
+
+.bio-modal-dialog {
+    max-width: 850px;
+    width: 90%;
+}
+
+.bio-modal-body {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+}
+
+.bio-modal-body img {
+    max-height: 300px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bio-modal-body .profile-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bio-modal-body h5, .bio-modal-body p {
+    margin: 0 0 10px;
+    text-align: justify;
+}
+
+.bio-modal-body h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.bio-modal-body p {
+    line-height: 1.6;
+    color: #555;
+}
+
+.bio-modal-body .pl-4 {
+    padding-left: 1.5rem;
+}
