@@ -217,8 +217,23 @@
     transition: .5s;
 }
 
-.page-header {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/carousel-2.jpg) center center no-repeat;
+.page-header-about {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/about-us-banner.png) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-services {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/our-services.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-contact {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/contact-us.jpeg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header-projects {
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/projects-energy.webp) center center no-repeat;
     background-size: cover;
 }
 
@@ -711,4 +726,13 @@
 
 .bio-modal-body .pl-4 {
     padding-left: 1.5rem;
+}
+
+/*** Index Page Slide Carousel ***/
+.highlighted-text {
+    display: inline-block;
+    background-color:#32C36C;
+    padding: 10px 20px;
+    border-radius: 5px;
+    white-space: pre-line;
 }
