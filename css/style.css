@@ -1,8 +1,12 @@
 /********** Template CSS **********/
 :root {
-    --primary: #32C36C;
+    --primary: #1c693c;
     --light: #F6F7F8;
     --dark: #1A2A36;
+}
+
+.txt-primary {
+    color: #1c693c;
 }
 
 .fw-medium {
@@ -731,8 +735,31 @@
 /*** Index Page Slide Carousel ***/
 .highlighted-text {
     display: inline-block;
-    background-color:#32C36C;
+    background-color:#1c693c;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 30px;
     white-space: pre-line;
+}
+
+.custom-bg-green {
+    background-color: #1c693c !important;
+}
+
+/* Custom button outline */
+.btn-outline-custom {
+    border: 2px solid #1c693c;
+    color: #1c693c;
+}
+
+/* Hover effect */
+.btn-outline-custom:hover {
+    background-color: #1c693c;
+    color: white;
+}
+
+.blockquote {
+    font-style: italic;
+    border-left: 4px solid #1c693c;
+    padding-left: 15px;
+    color: #555;
 }
