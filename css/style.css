@@ -533,9 +533,9 @@
     align-items: center;
     gap: 20px;
     padding: 20px;
-    overflow-x: auto; 
+    overflow-x: auto;
     scroll-snap-type: x mandatory;
-    white-space: nowrap; 
+    white-space: nowrap;
     scrollbar-width: thin;
     position: relative;
     animation: scroll-partners 20s linear infinite;
@@ -556,7 +556,7 @@
 
 .partner-item {
     flex: 0 0 auto;
-    scroll-snap-align: center; 
+    scroll-snap-align: center;
     width: 200px;
     height: 200px;
     display: flex;
@@ -573,13 +573,19 @@
 /* Add scrolling animation */
 @keyframes scroll-partners {
     0% {
-        transform: translateX(0);
+        transform: translateX(0); /* Start at the center */
+    }
+    25% {
+        transform: translateX(-50%); /* Move to the left */
     }
     50% {
-        transform: translateX(-50%); 
+        transform: translateX(50%); /* Move to the right */
+    }
+    75% {
+        transform: translateX(-50%); /* Move to the left again */
     }
     100% {
-        transform: translateX(0); 
+        transform: translateX(0); /* Return to the center */
     }
 }
 
