@@ -132,237 +132,483 @@
                     </ul>
                 </div>
             </div>
-            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.5s">
-                <!-- Project Jasper -->
-                <div class="col-lg-4 col-md-6 portfolio-item third" id="project-jasper">
-                    <div class="card shadow rounded">
-                        <div class="portfolio-img card-img-top position-relative rounded overflow-hidden">
-                            <img class="img-fluid rounded-top" src="img/img-600x400-5.jpg" alt="Project Jasper">
-                            <span class="badge custom-bg-green position-absolute top-0 start-0 m-2 px-3 py-2">Kimironko</span>
-                            <div class="portfolio-btn position-absolute bottom-0 start-0 w-100 d-flex justify-content-center">
-                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
-                            </div>
+            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.5s">                
+                <!-- Jasper -->
+                <div class="col-lg-4 col-md-6 portfolio-item first" id="project-jasper">
+                    <div class="card shadow rounded h-100">
+                        <!-- Project Image Section -->
+                        <div class="portfolio-img position-relative">
+                            <img class="img-fluid w-100" src="img/img-600x400-5.jpg" alt="Project Image" style="height: 200px; object-fit: cover;">
                         </div>
-                        <div class="card-body pt-3">
-                            <p class="txt-primary mb-0">Project Jasper - 20 kW Solar Mini-grid</p>
-                            <p>Description: $60K with minimum investment of $2K per investment</p>
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="progress flex-grow-1 me-3" style="height: 15px; width: 70%;">
-                                    <div class="progress-bar custom-bg-green progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%;" 
-                                        aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        
+                        <!-- Project Title and Details -->
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h4 class="project-title mb-3" style="color:#1c693c;">Project Jasper - Solar Mini-grid</h4>
+                            
+                            <!-- Key Project Metrics -->
+                            <div class="d-flex flex-wrap gap-3 mb-4">
+                                <div class="metric-badge custom-bg-green text-white px-3 py-2 rounded">
+                                    36 months to mature
                                 </div>
-                                <button class="btn custom-bg-green rounded-pill py-1 px-3 invest-btn" style="color: white;" 
+                                <div class="metric-badge custom-bg-green text-white px-3 py-2 rounded">
+                                    7% interest
+                                </div>
+                            </div>
+                            
+                            <!-- Project Description -->
+                            <p class="text-muted mb-4">
+                                Project Jasper aims to raise $60,000 from this bond issue and will use the funds to 
+                                provide 20 kW Soalr Mini-Grid to the Kimironko environment.
+                            </p>
+                            
+                            <!-- Large Percentage Display -->
+                            <h4 class="mb-3" id="percentage-display">14%</h4>
+                            
+                            <!-- Progress Bar -->
+                            <div class="progress mb-3" style="height: 8px;">
+                                <div class="progress-bar bg-success" role="progressbar" 
+                                     style="width: 14%;" aria-valuenow="14" 
+                                     aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                            
+                            <!-- Project Stats -->
+                            <div class="d-flex justify-content-between mt-auto">
+                                <div>
+                                    <h5 class="mb-0" style="color: #8B0000;">$33,850</h5>
+                                    <small class="text-muted">Raised</small>
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="mb-0">20</h5>
+                                    <small class="text-muted">Investors</small>
+                                </div>
+                                <div class="text-end">
+                                    <h5 class="mb-0">56</h5>
+                                    <small class="text-muted">Days to run</small>
+                                </div>
+                            </div>
+                            
+                            <!-- View Project Button -->
+                            <button class="btn custom-bg-green text-white w-100 mt-4 view-details-btn" 
+                                        data-bs-toggle="modal" 
+                                        data-bs-target="#paymentModal"
+                                        data-project-title="Project Jasper"
+                                        data-investment-target="60000"
+                                        data-minimum-investment="2000"
+                                        data-investment-amount-remaining="216150"
+                                        data-project-id="project-jasper"
+                                        data-maturity="36 months"
+                                        data-expected-interest-rate="7"
+                                        data-interest-payment="Monthly"
+                                        data-start-date="2025-01-01" 
+                                        data-end-date="2025-01-12"
+                                        data-description="$60K with minimum investment of $2K per investment" 
+                                        data-investment-status="open"
+                                        data-raised="33850"
+                                        data-location="Kimironko, Kigali Rwanda"
+                                        data-image="img/img-600x400-5.jpg"
+                                        data-sustainability="Energy access for 150 Households">
+                                View Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sardus -->
+                <div class="col-lg-4 col-md-6 portfolio-item first" id="project-sardus">
+                    <div class="card shadow rounded">
+                        <!-- Project Image Section -->
+                        <div class="portfolio-img position-relative">
+                            <img class="img-fluid w-100" src="img/solar-2.jpeg" alt="Project Sardus" style="height: 200px; object-fit: cover;">
+                        </div>
+                        
+                        <!-- Project Title and Details -->
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h4 class="project-title mb-3" style="color:#1c693c;">Project Sardus - Solar Mini-grid</h4>
+                            
+                            <!-- Key Project Metrics -->
+                            <div class="d-flex flex-wrap gap-3 mb-4">
+                                <div class="metric-badge custom-bg-green text-white px-3 py-2 rounded">
+                                    24 months to mature
+                                </div>
+                                <div class="metric-badge custom-bg-green text-white px-3 py-2 rounded">
+                                    7% interest
+                                </div>
+                            </div>
+                            
+                            <!-- Project Description -->
+                            <p class="text-muted mb-4">
+                                Project Sardus aims to raise $150,000 from this bond issue and will use the funds to 
+                                provide 50 kW Solar Mini-Grid to the Kabeza environment.
+                            </p>
+                            
+                            <!-- Large Percentage Display -->
+                            <h4 class="mb-3" id="percentage-display">35%</h4>
+                            
+                            <!-- Progress Bar -->
+                            <div class="progress mb-3" style="height: 8px;">
+                                <div class="progress-bar bg-success" role="progressbar" 
+                                     style="width: 35%;" aria-valuenow="35"
+                                     aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                            
+                            <!-- Project Stats -->
+                            <div class="d-flex justify-content-between mt-auto">
+                                <div>
+                                    <h5 class="mb-0" style="color: #8B0000;">$55,850</h5>
+                                    <small class="text-muted">Raised</small>
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="mb-0">20</h5>
+                                    <small class="text-muted">Investors</small>
+                                </div>
+                                <div class="text-end">
+                                    <h5 class="mb-0">56</h5>
+                                    <small class="text-muted">Days to run</small>
+                                </div>
+                            </div>
+                            
+                            <!-- View Project Button -->
+                            <button class="btn custom-bg-green text-white w-100 mt-4 view-details-btn" 
                                         data-bs-toggle="modal" 
                                         data-bs-target="#paymentModal"
                                         data-project-id="project-jasper"
                                         data-project-type="Long-Term" 
                                         data-start-date="2025-01-01" 
                                         data-end-date="2025-01-12"
-                                        data-description="$60K with minimum investment of $2K per investment" 
-                                        data-total="60000" 
-                                        data-raised="0"
-                                        data-location="Kimironko, Kigali Rwanda"
-                                        data-image="img/img-600x400-5.jpg"
-                                        data-sustainability="Energy access for 150 Households">
-                                    Invest
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project Sardus -->
-                <div class="col-lg-4 col-md-6 portfolio-item second" id="project-sardus">
-                    <div class="card shadow rounded">
-                        <div class="portfolio-img card-img-top position-relative rounded overflow-hidden">
-                            <img class="img-fluid rounded-top" src="img/solar-2.jpeg" alt="Project Sardus">
-                            <span class="badge custom-bg-green position-absolute top-0 start-0 m-2 px-3 py-2">Kabeza</span>
-                            <div class="portfolio-btn position-absolute bottom-0 start-0 w-100 d-flex justify-content-center">
-                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/solar-2.jpeg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="card-body pt-3">
-                            <p class="txt-primary mb-0">Project Sardus - 50 kW Solar Mini-grid</p>
-                            <p>Description: $150K with minimum investment of $5K per investment</p>
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="progress flex-grow-1 me-3" style="height: 15px; width: 70%;">
-                                    <div class="progress-bar custom-bg-green progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%;" 
-                                        aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <button class="btn custom-bg-green rounded-pill py-1 px-3 invest-btn" style="color: white;"
-                                        data-bs-toggle="modal" 
-                                        data-bs-target="#paymentModal"
-                                        data-project-id="project-sardus"
-                                        data-project-type="Medium-Term" 
-                                        data-start-date="2025-01-01" 
-                                        data-end-date="2025-01-12"
                                         data-description="$150K with minimum investment of $5K per investment" 
                                         data-total="150000" 
-                                        data-raised="0"
+                                        data-raised="55850"
                                         data-location="Kabeza, Kigali Rwanda"
-                                        data-image="img/solar-2.jpeg"
+                                        data-image="img/solar-2"
                                         data-sustainability="Energy access for 375 Households">
-                                    Invest
-                                </button>
-                            </div>
+                                View Project
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project Amethyst -->                
-                <div class="col-lg-4 col-md-6 portfolio-item third" id="project-amethyst">
+                <!-- Amethyst -->
+                <div class="col-lg-4 col-md-6 portfolio-item first" id="project-amethyst">
                     <div class="card shadow rounded">
-                        <div class="portfolio-img card-img-top position-relative rounded overflow-hidden">
-                            <img class="img-fluid rounded-top" src="img/img-600x400-4.jpg" alt="Project Amethyst">
-                            <span class="badge custom-bg-green position-absolute top-0 start-0 m-2 px-3 py-2">Kibagabaga</span>
-                            <div class="portfolio-btn position-absolute bottom-0 start-0 w-100 d-flex justify-content-center">
-                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
-                            </div>
+                        <!-- Project Image Section -->
+                        <div class="portfolio-img position-relative">
+                            <img class="img-fluid w-100" src="img/img-600x400-4.jpg" alt="Project Amethyst" style="height: 200px; object-fit: cover;">
                         </div>
-                        <div class="card-body pt-3">
-                            <p class="txt-primary mb-0">Project Amethyst - 1 MW Solar Mini-grid</p>
-                            <p>Description: $3M with minimum investment of $100K per investment</p>
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="progress flex-grow-1 me-3" style="height: 15px; width: 70%;">
-                                    <div class="progress-bar custom-bg-green progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%;" 
-                                        aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        
+                        <!-- Project Title and Details -->
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h4 class="project-title mb-3" style="color:#1c693c;">Project Amethyst - Solar Mini-Grid</h4>
+                            
+                            <!-- Key Project Metrics -->
+                            <div class="d-flex flex-wrap gap-3 mb-4">
+                                <div class="metric-badge custom-bg-green text-white px-3 py-2 rounded">
+                                    24 months to mature
                                 </div>
-                                <button class="btn custom-bg-green rounded-pill px-3 py-1 invest-btn" style="color: white;"
+                                <div class="metric-badge custom-bg-green text-white px-3 py-2 rounded">
+                                    7% interest
+                                </div>
+                            </div>
+                            
+                            <!-- Project Description -->
+                            <p class="text-muted mb-4">
+                                Project Amethyst aims to raise $3,000,000 from this bond issue and will use the funds to 
+                                provide 1 MW Solar Mini-Grid to the Gihozo environment.
+                            </p>
+                            
+                            <!-- Large Percentage Display -->
+                            <h4 class="mb-3" id="percentage-display">12%</h4>
+                            
+                            <!-- Progress Bar -->
+                            <div class="progress mb-3" style="height: 8px;">
+                                <div class="progress-bar bg-success" role="progressbar" 
+                                     style="width: 12%;" aria-valuenow="12" 
+                                     aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                            
+                            <!-- Project Stats -->
+                            <div class="d-flex justify-content-between mt-auto">
+                                <div>
+                                    <h5 class="mb-0" style="color: #8B0000;">$250,000</h5>
+                                    <small class="text-muted">Raised</small>
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="mb-0">16</h5>
+                                    <small class="text-muted">Investors</small>
+                                </div>
+                                <div class="text-end">
+                                    <h5 class="mb-0">50</h5>
+                                    <small class="text-muted">Days to run</small>
+                                </div>
+                            </div>
+                            
+                            <!-- View Project Button -->
+                            <button class="btn custom-bg-green text-white w-100 mt-4 view-details-btn" 
                                         data-bs-toggle="modal" 
                                         data-bs-target="#paymentModal"
+                                        data-project-title="Project Amethyst"
+                                        data-investment-target="3000000"
+                                        data-minimum-investment="100000"
+                                        data-investment-amount-remaining="2750000"
                                         data-project-id="project-amethyst"
-                                        data-project-type="Long-Term" 
+                                        data-maturity="24 months"
+                                        data-expected-interest-rate="7"
+                                        data-interest-payment="Monthly"
                                         data-start-date="2025-01-01" 
                                         data-end-date="2025-01-12"
                                         data-description="$3M with minimum investment of $100K per investment" 
-                                        data-total="3000000" 
-                                        data-raised="0"
-                                        data-location="Kibagabaga, Kigali Rwanda"
+                                        data-investment-status="open"
+                                        data-raised="250000"
+                                        data-location="Kimironko, Kigali Rwanda"
                                         data-image="img/img-600x400-4.jpg"
                                         data-sustainability="Energy access for 22,500 Households">
-                                    Invest
-                                </button>
-                            </div>
+                                View Project
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project Selen -->
+                <!-- Selen -->
                 <div class="col-lg-4 col-md-6 portfolio-item first" id="project-selen">
                     <div class="card shadow rounded">
-                        <div class="portfolio-img card-img-top position-relative rounded overflow-hidden">
-                            <img class="img-fluid rounded-top" src="img/img-600x400-3.jpg" alt="Project Selen">
-                            <span class="badge custom-bg-green position-absolute top-0 start-0 m-2 px-3 py-2">Masoro</span>
-                            <div class="portfolio-btn position-absolute bottom-0 start-0 w-100 d-flex justify-content-center">
-                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
-                            </div>
+                        <!-- Project Image Section -->
+                        <div class="portfolio-img position-relative">
+                            <img class="img-fluid w-100" src="img/img-600x400-3.jpg" alt="Project Selen" style="height: 200px; object-fit: cover;">
                         </div>
-                        <div class="card-body pt-3">
-                            <p class="txt-primary mb-0">Project Selen - 200 kW Solar Mini-grid</p>
-                            <p>Description: $600K with minimum investment of $6K per investment</p>
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="progress flex-grow-1 me-3" style="height: 15px; width: 70%;">
-                                    <div class="progress-bar custom-bg-green progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%;" 
-                                        aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        
+                        <!-- Project Title and Details -->
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h4 class="project-title mb-3" style="color:#1c693c;">Project Selen - Solar Mini-grid</h4>
+                            
+                            <!-- Key Project Metrics -->
+                            <div class="d-flex flex-wrap gap-3 mb-4">
+                                <div class="metric-badge custom-bg-green text-white px-3 py-2 rounded">
+                                    24 months to mature
                                 </div>
-                                <button class="btn custom-bg-green rounded-pill py-1 px-3 invest-btn" style="color: white;"
+                                <div class="metric-badge custom-bg-green text-white px-3 py-2 rounded">
+                                    7% interest
+                                </div>
+                            </div>
+                            
+                            <!-- Project Description -->
+                            <p class="text-muted mb-4">
+                                Project Selen aims to raise $600,000 from this bond issue and will use the funds to 
+                                provide 200 kW Solar Mini-Grid to the Masoro environment.
+                            </p>
+                            
+                            <!-- Percentage Display -->
+                            <h2 class="mb-3" id="percentage-display">65%</h4>
+                            
+                            <!-- Progress Bar -->
+                            <div class="progress mb-3" style="height: 8px;">
+                                <div class="progress-bar bg-success" role="progressbar" 
+                                     style="width:65%;" aria-valuenow="65" 
+                                     aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                            
+                            <!-- Project Stats -->
+                            <div class="d-flex justify-content-between mt-auto">
+                                <div>
+                                    <h5 class="mb-0" style="color: #8B0000;">$450,350</h5>
+                                    <small class="text-muted">Raised</small>
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="mb-0">41</h5>
+                                    <small class="text-muted">Investors</small>
+                                </div>
+                                <div class="text-end">
+                                    <h5 class="mb-0">20</h5>
+                                    <small class="text-muted">Days to run</small>
+                                </div>
+                            </div>
+                            
+                            <!-- View Project Button -->
+                            <button class="btn custom-bg-green text-white w-100 mt-4 view-details-btn" 
                                         data-bs-toggle="modal" 
                                         data-bs-target="#paymentModal"
+                                        data-project-title="Project Selen"
+                                        data-investment-target="600000"
+                                        data-minimum-investment="6000"
+                                        data-investment-amount-remaining="149650"
                                         data-project-id="project-selen"
-                                        data-project-type="Short-Term" 
+                                        data-maturity="24 months"
+                                        data-expected-interest-rate="7"
+                                        data-interest-payment="Monthly"
                                         data-start-date="2025-01-01" 
                                         data-end-date="2025-01-12"
                                         data-description="$600K with minimum investment of $6K per investment" 
-                                        data-total="600000" 
-                                        data-raised="0"
+                                        data-investment-status="open"
+                                        data-raised="450350"
                                         data-location="Masoro, Kigali Rwanda"
                                         data-image="img/img-600x400-3.jpg"
                                         data-sustainability="Energy access for 4,500 Households">
-                                    Invest
-                                </button>
-                            </div>
+                                View Project
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project Wallace -->
+                <!-- Wallace -->
                 <div class="col-lg-4 col-md-6 portfolio-item first" id="project-wallace">
                     <div class="card shadow rounded">
-                        <div class="portfolio-img rounded overflow-hidden">
-                            <img class="img-fluid" src="img/solar-1.jpg" alt="Project Wallace">
-                            <span class="badge custom-bg-green position-absolute top-0 start-0 m-2 px-3 py-2">Kisimenti</span>
-                            <div class="portfolio-btn position-absolute bottom-0 start-0 w-100 d-flex justify-content-center">
-                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/solar-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
-                            </div>
+                        <!-- Project Image Section -->
+                        <div class="portfolio-img position-relative">
+                            <img class="img-fluid w-100" src="img/solar-1.jpg" alt="Project Wallace" style="height: 200px; object-fit: cover;">
                         </div>
-                        <div class="card-body pt-3">
-                            <p class="txt-primary mb-0">Project Wallace - 350 kW Solar Mini-grid</p>
-                            <p>Description: $1.05M with minimum investment of $35K per investment</p>
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="progress" style="height: 15px; width: 70%;">
-                                    <div class="progress-bar custom-bg-green progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%;" 
-                                        aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        
+                        <!-- Project Title and Details -->
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h4 class="project-title mb-3" style="color:#1c693c;">Project Wallace - Solar Mini-grid</h4>
+                            
+                            <!-- Key Project Metrics -->
+                            <div class="d-flex flex-wrap gap-3 mb-4">
+                                <div class="metric-badge custom-bg-green text-white px-3 py-2 rounded">
+                                    24 months to mature
                                 </div>
-                                <button class="btn custom-bg-green rounded-pill py-1 px-3 invest-btn" style="color: white;"
+                                <div class="metric-badge custom-bg-green text-white px-3 py-2 rounded">
+                                    7% interest
+                                </div>
+                            </div>
+                            
+                            <!-- Project Description -->
+                            <p class="text-muted mb-4">
+                                Project Wallace aims to raise $1,050,000 from this bond issue and will use the funds to 
+                                provide 350 kW Solar Mini-Grid to the Kabeza environment.
+                            </p>
+                            
+                            <!-- Percentage Display -->
+                            <h4 class="mb-3" id="percentage-display">45%</h4>
+                            
+                            <!-- Progress Bar -->
+                            <div class="progress mb-3" style="height: 8px;">
+                                <div class="progress-bar bg-success" role="progressbar" 
+                                     style="width: 45%;" aria-valuenow="45" 
+                                     aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                            
+                            <!-- Project Stats -->
+                            <div class="d-flex justify-content-between mt-auto">
+                                <div>
+                                    <h5 class="mb-0" style="color: #8B0000;">$450,850</h5>
+                                    <small class="text-muted">Raised</small>
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="mb-0">28</h5>
+                                    <small class="text-muted">Investors</small>
+                                </div>
+                                <div class="text-end">
+                                    <h5 class="mb-0">16</h5>
+                                    <small class="text-muted">Days to run</small>
+                                </div>
+                            </div>
+                            
+                            <!-- View Project Button -->
+                            <button class="btn custom-bg-green text-white w-100 mt-4 view-details-btn" 
                                         data-bs-toggle="modal" 
                                         data-bs-target="#paymentModal"
+                                        data-project-title="Project Wallace"
+                                        data-investment-target="1050000"
+                                        data-minimum-investment="100000"
+                                        data-investment-amount-remaining="599150"
                                         data-project-id="project-wallace"
-                                        data-project-type="Short-Term" 
+                                        data-maturity="28 months"
+                                        data-expected-interest-rate="7"
+                                        data-interest-payment="Monthly"
                                         data-start-date="2025-01-01" 
                                         data-end-date="2025-01-12"
                                         data-description="$1.05M with minimum investment of $35K per investment" 
-                                        data-total="1050000" 
-                                        data-raised="0"
+                                        data-investment-status="open"
+                                        data-raised="450850"
                                         data-location="Kisimenti, Kigali Rwanda"
                                         data-image="img/solar-1.jpg"
                                         data-sustainability="Energy access for 7,875 Households">
-                                    Invest
-                                </button>
-                            </div>
+                                View Project
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project Humper -->
+                <!-- Humper -->
                 <div class="col-lg-4 col-md-6 portfolio-item second" id="project-humper">
-                    <div class="card shadow rounded">
-                        <div class="portfolio-img rounded overflow-hidden">
-                            <img class="img-fluid" src="img/img-600x400-1.jpg" alt="Project Humper">
-                            <span class="badge custom-bg-green position-absolute top-0 start-0 m-2 px-3 py-2">Kimironko</span>
-                            <div class="portfolio-btn position-absolute bottom-0 start-0 w-100 d-flex justify-content-center">
-                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                                <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
-                            </div>
+                    <div class="card shadow rounded h-100">
+                        <!-- Project Image Section -->
+                        <div class="portfolio-img position-relative">
+                            <img class="img-fluid w-100" src="img/img-600x400-1.jpg" alt="Project Humper" style="height: 200px; object-fit: cover;">
                         </div>
-                        <div class="card-body pt-3">
-                            <p class="txt-primary mb-0">Project Humper - 800 kW Solar Mini-grid</p>
-                            <p>Description: $2.4M with minimum investment of $80K per investment</p>
-                            <div class="d-flex justify-content-center mb-3">
-                                <div class="progress" style="height: 15px; width: 70%;">
-                                    <div class="progress-bar custom-bg-green progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%;" 
-                                        aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                        
+                        <!-- Project Title and Details -->
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h4 class="project-title mb-3" style="color:#1c693c;">Project Humper - Solar Mini-grid</h4>
+                            
+                            <!-- Key Project Metrics -->
+                            <div class="d-flex flex-wrap gap-3 mb-4">
+                                <div class="metric-badge custom-bg-green text-white px-3 py-2 rounded">
+                                    24 months to mature
                                 </div>
-                                <button class="btn custom-bg-green rounded-pill py-1 px-3 invest-btn" style="color: white;"
+                                <div class="metric-badge custom-bg-green text-white px-3 py-2 rounded">
+                                    7% interest
+                                </div>
+                            </div>
+                            
+                            <!-- Project Description -->
+                            <p class="text-muted mb-4">
+                                Project Humper aims to raise $2,400,000 from this bond issue and will use the funds to 
+                                provide 800 kW Solar Mini-Grid to the Kabeza environment.
+                            </p>
+                            
+                            <!-- Percentage Display -->
+                            <h4 class="mb-3" id="percentage-display">100%</h4>
+                            
+                            <!-- Progress Bar -->
+                            <div class="progress mb-3" style="height: 8px;">
+                                <div class="progress-bar bg-success" role="progressbar" 
+                                     style="width: 100%;" aria-valuenow="100" 
+                                     aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                            </div>
+                            
+                            <!-- Project Stats -->
+                            <div class="d-flex justify-content-between mt-auto">
+                                <div>
+                                    <h5 class="mb-0" style="color: #8B0000;">$2,400,000</h5>
+                                    <small class="text-muted">Raised</small>
+                                </div>
+                                <div class="text-center">
+                                    <h5 class="mb-0">23</h5>
+                                    <small class="text-muted">Investors</small>
+                                </div>
+                                <div class="text-end">
+                                    <h5 class="mb-0">6</h5>
+                                    <small class="text-muted">Days to run</small>
+                                </div>
+                            </div>
+                            
+                            <!-- View Project Button -->
+                            <button class="btn custom-bg-green text-white w-100 mt-4 view-details-btn" 
                                         data-bs-toggle="modal" 
                                         data-bs-target="#paymentModal"
+                                        data-project-title="Project Humper"
+                                        data-investment-target="2400000"
+                                        data-minimum-investment="80000"
+                                        data-investment-amount-remaining="0"
                                         data-project-id="project-humper"
-                                        data-project-type="Medium-Term" 
+                                        data-maturity="24 months"
+                                        data-expected-interest-rate="7"
+                                        data-interest-payment="Monthly"
                                         data-start-date="2025-01-01" 
                                         data-end-date="2025-01-12"
                                         data-description="$2.4M with minimum investment of $80K per investment" 
-                                        data-total="2400000" 
-                                        data-raised="0"
+                                        data-investment-status="closed"
+                                        data-raised="2400000"
                                         data-location="Kimironko, Kigali Rwanda"
                                         data-image="img/img-600x400-1.jpg"
                                         data-sustainability="Energy access for 18,000 Households">
-                                    Invest
-                                </button>
-                            </div>
+                                View Project
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -371,7 +617,6 @@
     </div>
     <!-- Projects End -->
 
-
     <!-- Quote Start -->
     <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
         <div class="container quote px-lg-0">
@@ -379,7 +624,7 @@
                 <!-- Left Image -->
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="max-height: 400px; overflow: hidden;">
                     <div class="position-relative h-100">
-                        <img src="img/quote.jpg" 
+                        <img src="img/contact-us.jpg" 
                              class="img-fluid w-100 h-100" 
                              style="object-fit: cover; max-height: 400px;" 
                              alt="Contact Us Image">
@@ -559,97 +804,128 @@
         <div class="modal-dialog modal-dialog-scrollable modal-lg">
             <div class="modal-content shadow-lg border-0 rounded">
                 <div class="modal-header custom-bg-green text-white">
-                    <h5 class="modal-title fw-bold" id="paymentModalLabel">Project Details & Payment</h5>
+                    <h5 class="modal-title fw-bold" id="paymentModalLabel">Investment Details</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body bg-light">
-                    <!-- Project Details -->
-                    <div class="text-center mb-4">
-                        <img id="modal-project-image" src="default-placeholder.png" alt="Project Image" class="img-fluid mb-3 rounded shadow" style="max-width: 100%; height: auto;">
+                    <!-- Investment Details Section -->
+                    <div id="investmentDetails">
+                        <!-- Investment Overview -->
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <h4 id="modal-project-title" class="mb-3"></h4>
+                                <p><strong>Location:</strong> <span id="modal-project-city"></span></p>
+                                <p><strong>Status:</strong> <span id="modal-investment-status" class="badge bg-success"></span></p>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card bg-white shadow-sm">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Investment Progress</h5>
+                                        <h3 class="text-success mb-2">$<span id="modal-amount-raised"></span></h3>
+                                        <div class="progress mb-2" style="height: 20px;">
+                                            <div class="progress-bar custom-bg-green" role="progressbar"></div>
+                                        </div>
+                                        <p class="mb-0"><small>Target: $<span id="modal-investment-target"></span></small></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Investment Details -->
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <h6 class="fw-bold mb-3">Investment Terms</h6>
+                                <p><strong>Minimum Investment:</strong> $<span id="modal-minimum-investment"></span></p>
+                                <p><strong>Interest Rate:</strong> <span id="modal-interest-rate"></span>%</p>
+                                <p><strong>Maturity Period:</strong> <span id="modal-maturity"></span> months</p>
+                                <p><strong>Interest Payment:</strong> <span id="modal-interest-payment"></span></p>
+                                <p><strong>Capital Repayment:</strong> <span id="modal-capital-repayment"></span></p>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="fw-bold mb-3">Fundraising Period</h6>
+                                <p><strong>Start Date:</strong> <span id="modal-start-date"></span></p>
+                                <p><strong>End Date:</strong> <span id="modal-end-date"></span></p>
+                                <p><strong>Amount Remaining:</strong> $<span id="modal-amount-remaining"></span></p>
+                            </div>
+                        </div>
+    
+                        <!-- Invest Button -->
+                        <div class="text-center">
+                            <button id="showPaymentFormBtn" class="btn btn-primary btn-lg px-5 rounded-pill">
+                                Invest Now
+                            </button>
+                        </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <p><strong>Project Type:</strong> <span id="modal-project-type"></span></p>
-                            <p><strong>Start Date:</strong> <span id="modal-start-date"></span></p>
-                            <p><strong>End Date:</strong> <span id="modal-end-date"></span></p>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <p><strong>Location:</strong> <span id="modal-location"></span></p>
-                            <p><strong>Description:</strong> <span id="modal-description"></span></p>
-                            <p><strong>Sustainability Profile:</strong> <span id="modal-sustainability"></span></p>
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <p><strong>Amount Raised:</strong> <span id="modal-raised"></span></p>
-                        <p><strong>Total Amount:</strong> <span id="modal-total"></span></p>
-                        <p><strong>Progress:</strong> <span id="modal-progress"></span></p>
-
-                        <div class="progress" style="height: 20px;">
-                            <div class="progress-bar custom-bg-green fw-bold text-center" role="progressbar" style="width: 0%" 
-                                aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
-                        </div>
-                    </div>
-
-                    <hr class="my-4">
-
-                    <!-- Payment Form -->
-                    <form id="paymentForm">
-                        <h6 class="fw-bold mb-3">Payment Details</h6>
-                        <div class="mb-3">
-                            <label for="paymentMethod" class="form-label fw-bold">Payment Method</label>
-                            <select class="form-select shadow-sm" id="paymentMethod" required>
-                                <option value="MasterCard">MasterCard</option>
-                                <option value="PayPal">PayPal</option>
-                                <option value="BankTransfer">Bank Transfer</option>
-                            </select>
-                        </div>
-                        
-                        <!-- Card Details Section (Initially Visible) -->
-                        <div id="cardDetails">
+    
+                    <!-- Payment Form Section (Initially Hidden) -->
+                    <div id="paymentFormSection" class="d-none">
+                        <!-- Back Button -->
+                        <button id="backToDetailsBtn" class="btn btn-outline-secondary mb-4">
+                            <i class="fas fa-arrow-left"></i> Back to Details
+                        </button>
+    
+                        <form id="paymentForm">
+                            <h5 class="fw-bold mb-4">Payment Details</h5>
                             <div class="mb-3">
-                                <label for="cardNumber" class="form-label fw-bold">Card Number</label>
-                                <input type="text" class="form-control shadow-sm" id="cardNumber" maxlength="16" placeholder="Enter 16-digit card number" required>
+                                <label for="paymentMethod" class="form-label fw-bold">Payment Method</label>
+                                <select class="form-select shadow-sm" id="paymentMethod" required>
+                                    <option value="MasterCard">MasterCard</option>
+                                    <option value="PayPal">PayPal</option>
+                                    <option value="BankTransfer">Bank Transfer</option>
+                                </select>
                             </div>
-                            <div class="mb-3">
-                                <label for="cvv" class="form-label fw-bold">CVV</label>
-                                <input type="text" class="form-control shadow-sm" id="cvv" maxlength="3" placeholder="Enter 3-digit CVV" required>
+                            
+                            <!-- Card Details Section -->
+                            <div id="cardDetails">
+                                <div class="mb-3">
+                                    <label for="cardNumber" class="form-label fw-bold">Card Number</label>
+                                    <input type="text" class="form-control shadow-sm" id="cardNumber" maxlength="16" placeholder="Enter 16-digit card number" required>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="cvv" class="form-label fw-bold">CVV</label>
+                                        <input type="text" class="form-control shadow-sm" id="cvv" maxlength="3" placeholder="Enter 3-digit CVV" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="expiryDate" class="form-label fw-bold">Expiry Date</label>
+                                        <input type="month" class="form-control shadow-sm" id="expiryDate" required>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="mb-3">
-                                <label for="expiryDate" class="form-label fw-bold">Expiry Date</label>
-                                <input type="month" class="form-control shadow-sm" id="expiryDate" required>
+    
+                            <!-- Investment Amount Section -->
+                            <div id="amountSection" class="mb-4">
+                                <label for="amount" class="form-label fw-bold">Investment Amount</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">$</span>
+                                    <input type="text" class="form-control shadow-sm" id="amount" maxlength="10" placeholder="Enter amount" required>
+                                </div>
+                                <small class="text-muted">Minimum investment: $<span id="min-investment-amount"></span></small>
                             </div>
-                        </div>
-
-                        <!-- Investment Amount Section -->
-                        <div id="amountSection" class="mb-3">
-                            <label for="amount" class="form-label fw-bold">Investment Amount</label>
-                            <input type="text" class="form-control shadow-sm" id="amount" maxlength="10" placeholder="Enter Investment Amount" required>
-                        </div> 
-
-                        <!-- Bank Transfer Section (Initially Hidden) -->
-                        <div id="bankTransferDetails" class="d-none">
-                            <p class="text-muted">To make a transfer to a bank account, please use the following details:</p>
-                            <p><strong>Account Number:</strong> 0795009135 (Momo)</p>
-                            <p><strong>Account Name:</strong> Peace Bakare</p>
-                            <p><strong>Sort Code:</strong> 568391</p>
-                            <div class="mb-3">
-                                <label for="accountNumber" class="form-label fw-bold">Bank Account Number</label>
-                                <input type="text" class="form-control shadow-sm" id="accountNumber" placeholder="Enter the bank account number you are transferring from" required>
+    
+                            <!-- Bank Transfer Section (Initially Hidden) -->
+                            <div id="bankTransferDetails" class="d-none mb-4">
+                                <div class="card bg-light">
+                                    <div class="card-body">
+                                        <h6 class="fw-bold">Bank Transfer Details</h6>
+                                        <p class="mb-2"><strong>Account Number:</strong> 0795009135 (Momo)</p>
+                                        <p class="mb-2"><strong>Account Name:</strong> Peace Bakare</p>
+                                        <p class="mb-2"><strong>Sort Code:</strong> 568391</p>
+                                    </div>
+                                </div>
+                                <div class="mb-3 mt-3">
+                                    <label for="accountNumber" class="form-label fw-bold">Your Bank Account Number</label>
+                                    <input type="text" class="form-control shadow-sm" id="accountNumber" placeholder="Enter your bank account number" required>
+                                </div>
                             </div>
-                        </div>
-
-                        <!-- Submit Button -->
-                         <div class="text-center mt-4">                          
-                            <button type="submit" id="submitButton" class="btn btn-primary shadow-sm px-5 py-2 rounded-pill">Submit Payment</button>
-                         </div>
-                    </form>
-
-                    <!-- Receipt Section -->
-                    <div id="receipt" class="mt-4 d-none">
-                        <h6 class="fw-bold text-success">Payment Successful</h6>
-                        <p><strong>Project:</strong> <span id="receiptProjectName"></span></p>
-                        <p><strong>Card:</strong> **** **** **** <span id="last4"></span></p>
-                        <p><strong>Payment Method:</strong> <span id="receiptMethod"></span></p>
+    
+                            <!-- Submit Button -->
+                            <div class="text-center">
+                                <button type="submit" id="submitButton" class="btn btn-primary btn-lg px-5 rounded-pill">
+                                    Complete Investment
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -657,207 +933,83 @@
     </div>
 
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const projectsData = {};
+        document.addEventListener('DOMContentLoaded', function() {
+            const paymentModal = document.getElementById('paymentModal');
+            const investmentDetails = document.getElementById('investmentDetails');
+            const paymentFormSection = document.getElementById('paymentFormSection');
+            const showPaymentFormBtn = document.getElementById('showPaymentFormBtn');
+            const backToDetailsBtn = document.getElementById('backToDetailsBtn');
+            const paymentMethodSelect = document.getElementById('paymentMethod');
+            const cardDetails = document.getElementById('cardDetails');
+            const bankTransferDetails = document.getElementById('bankTransferDetails');
 
-            // Add click event listeners to buttons opening the modal
-            document.querySelectorAll(".invest-btn").forEach((button) => {
-                button.addEventListener("click", () => {
-                    const projectId = button.getAttribute("data-project-id") || button.closest('.portfolio-item').id;
-                    const projectType = button.getAttribute("data-project-type") || "Unknown";
-                    const description = button.getAttribute("data-description") || "No description provided.";
-                    const startDate = button.getAttribute("data-start-date") || "N/A";
-                    const endDate = button.getAttribute("data-end-date") || "N/A";
-                    const location = button.getAttribute("data-location") || "Not specified.";
-                    const image = button.getAttribute("data-image") || "default-placeholder.png";
-                    const sustain = button.getAttribute("data-sustainability") || "No information provided.";
-                    const total = parseFloat(button.getAttribute("data-total")) || 0;
-                    const raised = parseFloat(button.getAttribute("data-raised")) || 0;
+            // Handle modal data population
+            paymentModal.addEventListener('show.bs.modal', function(event) {
+                const button = event.relatedTarget;
+                
+                // Update modal fields with data from button
+                document.getElementById('modal-project-title').textContent = button.dataset.projectTitle;
+                document.getElementById('modal-project-city').textContent = button.dataset.projectCity;
+                document.getElementById('modal-investment-target').textContent = button.dataset.investmentTarget;
+                document.getElementById('modal-minimum-investment').textContent = button.dataset.minimumInvestment;
+                document.getElementById('min-investment-amount').textContent = button.dataset.minimumInvestment;
+                document.getElementById('modal-amount-remaining').textContent = button.dataset.investmentAmountRemaining;
+                document.getElementById('modal-maturity').textContent = button.dataset.maturity;
+                document.getElementById('modal-interest-rate').textContent = button.dataset.expectedInterestRate;
+                document.getElementById('modal-interest-payment').textContent = button.dataset.interestPaymentMonthly;
+                document.getElementById('modal-capital-repayment').textContent = button.dataset.capitalRepayment;
+                document.getElementById('modal-start-date').textContent = button.dataset.fundraisingStartDate;
+                document.getElementById('modal-end-date').textContent = button.dataset.fundraisingEndDate;
+                document.getElementById('modal-investment-status').textContent = button.dataset.investmentStatus;
+                document.getElementById('modal-amount-raised').textContent = button.dataset.investmentAmountRaised;
+                
+                // Calculate and update progress bar
+                const raised = parseInt(button.dataset.investmentAmountRaised);
+                const target = parseInt(button.dataset.investmentTarget);
+                const progress = (raised / target) * 100;
+                const progressBar = paymentModal.querySelector('.progress-bar');
+                progressBar.style.width = `${progress}%`;
+                progressBar.setAttribute('aria-valuenow', progress);
 
-                    // Initialize project data
-                    projectsData[projectId] = {
-                        total,
-                        raised,
-                        type: projectType,
-                        progressBar: button.closest('.portfolio-item').querySelector('.progress-bar')
-                    };
-
-                    updateModalContent(projectId, {
-                        image, projectType, description, startDate, 
-                        endDate, location, sustain, total, raised
-                    });
-                });
+                // Reset to investment details view
+                showInvestmentDetails();
             });
 
-            function updateModalContent(projectId, data) {
-                const { total, raised } = projectsData[projectId];
-                const percentage = total > 0 ? ((raised / total) * 100).toFixed(2) : 0;
+            // Show payment form when Invest button is clicked
+            showPaymentFormBtn.addEventListener('click', function() {
+                investmentDetails.classList.add('d-none');
+                paymentFormSection.classList.remove('d-none');
+            });
 
-                // Update modal fields
-                document.getElementById("modal-project-image").src = data.image;
-                document.getElementById("modal-project-type").textContent = data.projectType;
-                document.getElementById("modal-description").textContent = data.description;
-                document.getElementById("modal-start-date").textContent = data.startDate;
-                document.getElementById("modal-end-date").textContent = data.endDate;
-                document.getElementById("modal-location").textContent = data.location;
-                document.getElementById("modal-sustainability").textContent = data.sustain;
-                document.getElementById("modal-raised").textContent = `$${raised.toFixed(2)}`;
-                document.getElementById("modal-total").textContent = `$${total.toFixed(2)}`;
-                document.getElementById("modal-progress").textContent = `${percentage}%`;
+            // Show investment details when Back button is clicked
+            backToDetailsBtn.addEventListener('click', function() {
+                showInvestmentDetails();
+            });
 
-                // Update progress bars
-                updateProgressBars(projectId, percentage);
-
-                // Reset and show payment form
-                document.getElementById("paymentForm").classList.remove("d-none");
-                document.getElementById("receipt").classList.add("d-none");
-                document.getElementById("paymentForm").dataset.projectId = projectId;
-            }
-
-            function updateProgressBars(projectId, percentage) {
-                // Update modal progress
-                const modalProgressBar = document.querySelector("#paymentModal .progress-bar");
-                if (modalProgressBar) {
-                    modalProgressBar.style.width = `${percentage}%`;
-                    modalProgressBar.setAttribute("aria-valuenow", percentage);
-                    modalProgressBar.textContent = `${percentage}%`;
-                }
-
-                // Update project card progress
-                const projectProgressBar = projectsData[projectId].progressBar;
-                if (projectProgressBar) {
-                    projectProgressBar.style.width = `${percentage}%`;
-                    projectProgressBar.setAttribute("aria-valuenow", percentage);
-                    projectProgressBar.textContent = `${percentage}%`;
-                }
-            }
-
-            // Handle payment method changes
-            document.getElementById("paymentMethod").addEventListener("change", function() {
-                const paymentMethod = this.value;
-                const cardDetails = document.getElementById("cardDetails");
-                const amountSection = document.getElementById("amountSection");
-                const bankTransferDetails = document.getElementById("bankTransferDetails");
-                const submitButton = document.getElementById("submitButton");
-
-                if (paymentMethod === "BankTransfer") {
-                    cardDetails.classList.add("d-none");
-                    bankTransferDetails.classList.remove("d-none");
-                    submitButton.textContent = "Transfer Done";
+            // Handle payment method change
+            paymentMethodSelect.addEventListener('change', function() {
+                if (this.value === 'BankTransfer') {
+                    cardDetails.classList.add('d-none');
+                    bankTransferDetails.classList.remove('d-none');
                 } else {
-                    cardDetails.classList.remove("d-none");
-                    bankTransferDetails.classList.add("d-none");
-                    submitButton.textContent = "Submit Payment";
+                    cardDetails.classList.remove('d-none');
+                    bankTransferDetails.classList.add('d-none');
                 }
-                // Always show amount section
-                amountSection.classList.remove("d-none");
             });
+
+            function showInvestmentDetails() {
+                investmentDetails.classList.remove('d-none');
+                paymentFormSection.classList.add('d-none');
+            }
 
             // Handle form submission
-            document.getElementById("paymentForm").addEventListener("submit", function(event) {
-                event.preventDefault();
-                
-                const projectId = this.dataset.projectId;
-                const paymentMethod = document.getElementById("paymentMethod").value;
-                const amount = parseFloat(document.getElementById("amount").value.trim());
-
-                // Validation
-                if (isNaN(amount) || amount <= 0) {
-                    alert("Please enter a valid investment amount.");
-                    return;
-                }
-
-                if (!projectsData[projectId]) {
-                    alert("Invalid project ID.");
-                    return;
-                }
-
-                const { total, raised } = projectsData[projectId];
-                if (amount > total - raised) {
-                    alert(`Investment exceeds remaining amount. Maximum allowed: $${(total - raised).toFixed(2)}`);
-                    return;
-                }
-
-                if (paymentMethod === "BankTransfer") {
-                    const accountNumber = document.getElementById("accountNumber").value.trim();
-                    if (!accountNumber) {
-                        alert("Please enter your bank account number.");
-                        return;
-                    }
-                } else {
-                    // Validate card details
-                    const cardNumber = document.getElementById("cardNumber").value.trim();
-                    const cvv = document.getElementById("cvv").value.trim();
-                    const expiryDate = document.getElementById("expiryDate").value;
-                    
-                    if (!cardNumber || cardNumber.length !== 16) {
-                        alert("Please enter a valid 16-digit card number.");
-                        return;
-                    }
-                    if (!cvv || cvv.length !== 3) {
-                        alert("Please enter a valid 3-digit CVV.");
-                        return;
-                    }
-                    if (!expiryDate) {
-                        alert("Please enter the card expiry date.");
-                        return;
-                    }
-                }
-
-                // Process payment
-                processPayment(projectId, amount, paymentMethod);
+            document.getElementById('paymentForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                // Add your payment processing logic here
+                alert('Investment submitted successfully!');
+                paymentModal.querySelector('.btn-close').click();
             });
-
-            function processPayment(projectId, amount, paymentMethod) {
-                // Update project data
-                projectsData[projectId].raised += amount;
-                const { total, raised } = projectsData[projectId];
-                const percentage = ((raised / total) * 100).toFixed(2);
-
-                // Update displays
-                document.getElementById("modal-raised").textContent = `$${raised.toFixed(2)}`;
-                updateProgressBars(projectId, percentage);
-
-                // Update receipt
-                const receiptMethod = document.getElementById("receiptMethod");
-                const last4 = document.getElementById("last4");
-                const receiptProjectName = document.getElementById("receiptProjectName");
-
-                receiptMethod.textContent = paymentMethod;
-                if (paymentMethod !== "BankTransfer") {
-                    last4.textContent = document.getElementById("cardNumber").value.slice(-4);
-                } else {
-                    last4.textContent = "N/A";
-                }
-                receiptProjectName.textContent = document.getElementById("modal-project-type").textContent;
-
-                // Show receipt
-                document.getElementById("receipt").classList.remove("d-none");
-                document.getElementById("paymentForm").classList.add("d-none");
-
-                // Success message
-                alert(`Payment of $${amount.toFixed(2)} successfully processed!`);
-
-                // Check if fully funded
-                if (raised >= total) {
-                    alert("This project is now fully funded! Investment opportunity closed.");
-                    const investButton = document.querySelector(`[data-project-id="${projectId}"]`);
-                    if (investButton) investButton.disabled = true;
-                }
-            }
-
-            // Reset form on modal close
-            document.getElementById("paymentModal").addEventListener("hidden.bs.modal", () => {
-                document.getElementById("paymentForm").reset();
-                document.getElementById("paymentForm").classList.remove("d-none");
-                document.getElementById("receipt").classList.add("d-none");
-                
-                // Reset payment method display
-                const paymentMethod = document.getElementById("paymentMethod");
-                paymentMethod.value = "MasterCard";
-                paymentMethod.dispatchEvent(new Event('change'));
-            });
-        });
+        });        
     </script>
 
     <!-- JavaScript Libraries -->

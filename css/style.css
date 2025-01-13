@@ -319,6 +319,13 @@
     }
 }
 
+/* .btn-lg-square {
+    width: 55px; 
+    height: 50px; 
+    font-size: 20px; 
+} */
+
+
 
 /*** Project Portfolio ***/
 #portfolio-flters li {
@@ -336,7 +343,7 @@
     border-color: var(--primary);
 }
 
-.portfolio-img {
+/* .portfolio-img {
     position: relative;
 }
 
@@ -367,7 +374,53 @@
 .portfolio-item:hover .portfolio-img::after {
     width: 51%;
     right: 0;
+} */
+
+.portfolio-item .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
+
+.card-body {
+    flex: 1;
+}
+
+.metric-badge {
+    font-size: 0.9rem;
+    border-radius: 25px;
+}
+
+.project-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.progress {
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+.progress-bar {
+    transition: width 0.6s ease;
+}
+
+.btn {
+    border-radius: 4px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
 
 .portfolio-btn {
     position: absolute;
@@ -573,19 +626,19 @@
 /* Add scrolling animation */
 @keyframes scroll-partners {
     0% {
-        transform: translateX(0); /* Start at the center */
+        transform: translateX(0); 
     }
     25% {
-        transform: translateX(-50%); /* Move to the left */
+        transform: translateX(-50%); 
     }
     50% {
-        transform: translateX(50%); /* Move to the right */
+        transform: translateX(50%); 
     }
     75% {
-        transform: translateX(-50%); /* Move to the left again */
+        transform: translateX(-50%);
     }
     100% {
-        transform: translateX(0); /* Return to the center */
+        transform: translateX(0); 
     }
 }
 
@@ -768,4 +821,39 @@
     border-left: 4px solid #1c693c;
     padding-left: 15px;
     color: #555;
+}
+
+/* Testing Styles */
+.metric-badge {
+    font-size: 0.9rem;
+    border-radius: 25px;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.progress {
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+.progress-bar {
+    transition: width 0.6s ease;
+}
+
+.btn {
+    border-radius: 4px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
